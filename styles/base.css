@@ -16,7 +16,7 @@ body {
 }
 
 
-h1 {
+h1,h2 {
     color: #d0d7e0;
     margin-bottom: 0;
     font-weight: bold; /* Usa la fuente Roboto en negrita */
