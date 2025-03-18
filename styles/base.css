@@ -1,7 +1,9 @@
 
 /* General Styles */
 body {
-    font-family: 'Roboto', 'Arial', sans-serif; /* Añadir Roboto con Arial como respaldo */
+  
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a todo el cuerpo del documento */
+
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
