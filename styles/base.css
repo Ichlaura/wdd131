@@ -1,0 +1,368 @@
+/* Importar fuente Google Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; /* Añadir Roboto con Arial como respaldo */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+}
+
+
+h1 {
+    color: #d0d7e0;
+    margin-bottom: 0;
+    font-weight: bold; /* Usa la fuente Roboto en negrita */
+   
+}
+
+header {
+    width: 100%;
+    background-color: #23395d;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 700; /* Usa Roboto en negrita */
+}
+
+.highlight {
+    color: #dbeff3;
+    text-align: center;
+}
+
+/* Navbar Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    background-color: #000; /* Cambiado a color negro */
+    margin-top: 20px;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+    background-color: #333; /* Color más oscuro al hacer hover */
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* General Styles */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #d0d7e0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Estilo para el contenedor de las tarjetas */
+section {
+    display: grid; /* Establece el contenedor como un grid en lugar de Flexbox (el comentario original menciona Flexbox, pero se usa Grid) */
+    
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas iguales en el grid, cada una ocupa la mitad del espacio disponible */
+    
+    /* justify-content: space-between; */  
+    /* (Este código está comentado) Distribuiría los elementos dejando el máximo espacio entre ellos, pero no aplica en grid por defecto */
+    
+    max-width: 1200px; /* Limita el ancho máximo de la sección a 1200 píxeles, evitando que se expanda demasiado en pantallas grandes */
+    width: 100%; /* Asegura que la sección ocupe todo el ancho disponible dentro de su contenedor padre */
+    
+    padding: 20px; /* Agrega un espacio interno de 20px alrededor de la sección */
+    box-sizing: border-box; /* Hace que `padding` y `border` se incluyan en el ancho total de la sección, evitando que crezca más de lo esperado */
+    
+    gap: 2rem; /* Establece un espacio de 2rem entre las columnas y filas dentro del grid */
+    
+    align-items: start; /* Alinea los elementos dentro de cada celda del grid hacia la parte superior (inicio del eje vertical) */
+    
+    justify-content: center; /* Centra el grid dentro de su contenedor padre (en el eje horizontal) */
+    
+    align-items: center; /* (Esta línea sobrescribe `align-items: start;`) Alinea las tarjetas en el centro verticalmente en lugar de en la parte superior */
+}
+
+
+
+/* Estilo para las tarjetas */
+.about {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%; /* Ambas tarjetas ocupan el 48% del ancho del contenedor */
+    flex-grow: 1; /* Asegura que ambas tarjetas crezcan igual */
+    max-width: 1200px; /* Limita el ancho máximo de la sección a 1200 píxeles, evitando que se expanda demasiado en pantallas grandes */
+    width: 100%; /* Asegura que la sección ocupe todo el ancho disponible dentro de su contenedor padre */
+    
+   
+}
+ .resources {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 48%; /* Ambas tarjetas ocupan el 48% del ancho del contenedor */
+    flex-grow: 1; /* Asegura que ambas tarjetas crezcan igual */
+    flex-basis: 10%;
+}
+
+
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.card1 img,
+.card2 img {
+    max-width: 100%;  /* Asegura que las imágenes sean responsivas */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    display: block;   /* Elimina el espacio debajo de las imágenes */
+    margin: 0 auto;   /* Centra las imágenes */
+}
+
+/* Estilos adicionales para las imágenes de la bandera */
+img.flag {
+    width: 100px;
+    height: auto;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-text {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Añade un espacio entre los elementos de texto */
+}
+
+.about img.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/* Contenedor principal */
+section {
+    display: grid;
+    grid-template-columns: 2fr 0.1fr;/* Dos columnas iguales (1fr = fracción del espacio disponible) */
+    gap: 1rem; /* Espacio entre las tarjetas */
+    align-items: start; /* Alinea las tarjetas arriba */
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, las tarjetas estarán en una sola columna */
+    }
+}
+
+/* Ajuste para pantallas de tamaño medio */
+@media (max-width: 480px) {
+    section {
+        grid-template-columns: 1fr; /* En pantallas muy pequeñas también las tarjetas estarán en una sola columna */
+        gap: 0.5rem; /* Reduce el espacio entre las tarjetas para mejorar la visualización en pantallas pequeñas */
+    }
+}
+/* Tarjeta card1 */
+.about {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Tarjeta card2 */
+.resources {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Para las imágenes dentro de las tarjetas */
+.card1 img,
+.Colombia img {
+    max-width: 100%;  /* Asegura que las imágenes sean responsivas */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    display: block;   /* Elimina el espacio debajo de las imágenes */
+      /* Centra las imágenes */
+}
+
+
+img.flag {
+    width: 100px;
+    height: auto;
+    align-self: flex-start; /* Alinea la imagen de la bandera al inicio */
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #23395d;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* Styling for the "Resources" card */
+
+
+.Resources ul {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds indentation for the list */
+    color: #007BFF;
+}
+
+.Resources a {
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.Resources a:hover {
+    text-decoration: underline;
+}
+
+
+/* Card styling */
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #23395d;
+    padding: 20px;
+}
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
+    justify-content: center; /* Centrar contenido verticalmente */
+    max-width: 750px; /* Ajusta el ancho según necesites */
+    width: 100%;
+    min-height: 300px; /* Expande el alto mínimo */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 10px; /* Más espacio dentro */
+    margin: 20px auto; /* Centrar la card horizontalmente */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra para mejorar el diseño */
+}
+
+/* Asegura que los enlaces dentro de card2 sean más visibles */
+.card2 .Resources a {
+    display: block; /* Para que cada enlace ocupe una línea */
+    margin: 5px 0; /* Espacio entre enlaces */
+    font-size: 18px; /* Letras más grandes */
+    text-decoration: none;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card2 .Resources a:hover {
+    background-color: #ddd; /* Efecto hover para que resalte */
+}
+
+
+/* Paragraph and image alignment */
+.paragraph {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.paragraph p {
+    flex: 1; /* Ensures the paragraph takes up all available space */
+    margin-right: 20px; /* Adds space between the text and the image */
+}
+
+/* Image styling */
+.about-img {
+    max-width: 150px; /* Sets a max width for the image */
+    height: auto;
+    border-radius: 8px;
+}
+　
+/* Flag styling */
+.flag {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.flag img {
+    max-width: 2px; /* Adjusts the size of the flag image */
+    height: auto;
+    margin-right: 10px; /* Adds space between the image and the text */
+}
+
+img {
+    width: 200px; /* Ajusta el tamaño según necesites */
+    height: auto; 
+}
