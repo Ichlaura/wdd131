@@ -198,11 +198,25 @@ img.flag {
 /* Contenedor principal */
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales (1fr = fracción del espacio disponible) */
-    gap: -10rem; /* Espacio entre las tarjetas */
+    grid-template-columns: 2fr 0.1fr;/* Dos columnas iguales (1fr = fracción del espacio disponible) */
+    gap: 1rem; /* Espacio entre las tarjetas */
     align-items: start; /* Alinea las tarjetas arriba */
 }
 
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, las tarjetas estarán en una sola columna */
+    }
+}
+
+/* Ajuste para pantallas de tamaño medio */
+@media (max-width: 480px) {
+    section {
+        grid-template-columns: 1fr; /* En pantallas muy pequeñas también las tarjetas estarán en una sola columna */
+        gap: 0.5rem; /* Reduce el espacio entre las tarjetas para mejorar la visualización en pantallas pequeñas */
+    }
+}
 /* Tarjeta card1 */
 .about {
     background-color: #f5f5f5;
@@ -338,7 +352,7 @@ footer p {
 /* Flag styling */
 .flag {
     display: flex;
-    align-items: right;
+    align-items: center;
     margin-top: 20px;
 }
 
