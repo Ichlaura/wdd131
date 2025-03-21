@@ -77,7 +77,7 @@
   }
   
   nav a:hover~#navmenu~#hambutton {
-    background-color: var(---blue);
+    background-color: var(--blue);
     color: #000;
   }
 
