@@ -1,6 +1,6 @@
 :root {
   --blue: rgb(29, 77, 114); /* Definición correcta */
-  --blue-1: rgba(29, 77, 114, 0.1);
+  --black: rgba(0, 0, 0, 0.1);
   --blue-7: rgba(29, 77, 114, 0.7);
   --brown: rgba(100, 50, 25, 1);
   --yellow: rgba(255, 255, 0, 1);
@@ -20,6 +20,7 @@
     font-family: Lato, Helvetica, Arial, sans-serif;
   }
   
+
   header {
     background-color: var(--blue);
     color: white;
@@ -28,7 +29,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    border-bottom: 3px solid black; /* Agregar línea negra debajo del header */
   }
+  
+
   
   h1 {
     padding: 1.5rem;
@@ -128,6 +132,26 @@
     color: var(--blue);
    
   }
+  
+  figure img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 15px 30px rgba(0, 0, 0, 0.4); /* Más sombra cuando pasa el hover */
+}
+
+
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.3); /* Añadir una sombra adicional más oscura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+
+  
+
 
 
   
