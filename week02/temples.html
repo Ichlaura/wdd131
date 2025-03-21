@@ -4,75 +4,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Laura Paola Nunez Cala, Web Development, HTML, CSS, JavaScript">
+  <meta name="author" content="Laura Paola Nunez Cala">
+  <title>WDD 131 – Dynamic Web Fundamentals - Laura Nunez</title>
+  <!-- External CSS File -->
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
     rel="stylesheet">
+      <!-- External JS File -->
   <script defer src="scripts/temples.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1 class="handler">Temple Album</h1>
-    <a href="#" id="hambutton"></a>
-    <nav id="navmenu">
-      <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
-    </nav>
-  </header>
+     <!-- Header Section -->
+     <header>
+        <h1 class="handler">Temple Album</h1>
+        <a href="#" id="hambutton"></a> <!-- Agregamos un ícono de menú -->
+        <nav id="navmenu">
+          <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
+          <a href="#">Old</a>
+          <a href="#">New</a>
+          <a href="#">Large</a>
+          <a href="#">Small</a>
+        </nav>
+      </header>
+      
 
   <main>
-    <h2>Home</h2>
+    <h1>Home</h1>
     <div class="res-grid">
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/templeprovo.jpg" alt="Temple Image">
+        <figcaption>Provo - Utah</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/capitolio.jpg" alt="Temple Image">
+        <figcaption>Salt Lake City Utah</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/templeprovo.jpg" alt="Temple Image">
+        <figcaption> Provo Utah</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/templejapones.jpg" alt="Temple Image">
+        <figcaption> Japan</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/otrotemplejapones.jpg" alt="Temple Image">
+        <figcaption>Japan</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/otrotemplejapones.jpg" alt="Temple Image">
+        <figcaption>Japan</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/templelosangeles.jpg" alt="Temple Image">
+        <figcaption>LA California</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/templelosangeles2.jpg" alt="Temple Image">
+        <figcaption> LA California</figcaption>
       </figure>
       <figure>
-        <img src="images/temples/sandiegolarge.jpg" alt="Temple Image">
-        <figcaption>San Diego California</figcaption>
+        <img src="images/japon.jpg" alt="Temple Image">
+        <figcaption>Japan</figcaption>
       </figure>
     </div>
 
   </main>
 
   <footer>
-    <p><span id="currentYear"></span> 🌺 Rubia Magdelena Francesco 🌺 Madagascar</p>
-    <p class="smaller" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+  
+        <p><span id="currentYear"></span> Laura Paola Nunez Cala - Japan</p>
+        <p class="smaller" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+     
   </footer>
 </body>
 
