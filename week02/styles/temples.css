@@ -1,5 +1,5 @@
 :root {
-    --purple: rgb(29, 77, 114);
+   
     --blue: rgb(29, 77, 114);
     --blue-1: rgba(29, 77, 114, 0.1);
     --blue-7: rgba(29, 77, 114, 0.7);
@@ -20,7 +20,7 @@
   }
   
   header {
-    background-color: var(--purple);
+    background-color: var(--blue);
     color: white;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@
   #hambutton {
     display: block;
     font-size: 3rem;
-    background-color: var(--purple);
+    background-color: var(--blue);
     text-decoration: none;
     color: white;
     border: none;
@@ -121,11 +121,14 @@
   
   figcaption {
     text-align: center;
-    color: var(--purple);
+    color: var(--blue);
+   
   }
   
+  
+  
   footer {
-    background-color: var(--purple);
+    background-color: var(--blue);
     color: white;
     text-align: center;
     padding: 10px;

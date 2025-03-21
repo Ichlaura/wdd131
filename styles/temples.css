@@ -1,10 +1,11 @@
 :root {
-    --purple: rgb(29, 77, 114);
+   
     --blue: rgb(29, 77, 114);
     --blue-1: rgba(29, 77, 114, 0.1);
     --blue-7: rgba(29, 77, 114, 0.7);
     --brown: rgba(100, 50, 25, 1);
     --yellow: rgba(255, 255, 0, 1);
+    --green: rgb(171, 203, 199);
   }
   
   * {
@@ -20,7 +21,7 @@
   }
   
   header {
-    background-color: var(--purple);
+    background-color: var(--blue);
     color: white;
     display: flex;
     flex-direction: row;
@@ -36,7 +37,7 @@
   #hambutton {
     display: block;
     font-size: 3rem;
-    background-color: var(--purple);
+    background-color: var(--blue);
     text-decoration: none;
     color: white;
     border: none;
@@ -71,12 +72,12 @@
   
   nav a:hover,
   nav a:active {
-    color: var(--yellow);
+    color: var(--green);
     font-weight: 700;
   }
   
   nav a:hover~#navmenu~#hambutton {
-    background-color: var(---yellow);
+    background-color: var(---blue);
     color: #000;
   }
   
@@ -121,11 +122,14 @@
   
   figcaption {
     text-align: center;
-    color: var(--purple);
+    color: var(--blue);
+   
   }
+
+
   
   footer {
-    background-color: var(--purple);
+    background-color: var(--blue);
     color: white;
     text-align: center;
     padding: 10px;
