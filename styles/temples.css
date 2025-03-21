@@ -76,11 +76,12 @@
     font-weight: 700;
   }
   
-  nav a:hover~#navmenu~#hambutton {
+
+
+  nav a:hover ~ #navmenu ~ #hambutton {
     background-color: var(--blue);
     color: #000;
-  }
-
+}
 
   
   nav.show {
