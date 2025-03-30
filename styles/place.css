@@ -14,8 +14,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a todo el cuerpo del documento */
-
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -48,14 +47,28 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+
+
+
+
 .hero {
     position: relative;
     margin-bottom: 2rem;
+    width: 100%;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    max-height: 80vh;
+    object-fit: cover;
     display: block;
 }
 
@@ -70,59 +83,78 @@ nav a:hover {
     text-align: center;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+@media screen and (max-width: 768px) {
+    .hero img {
+        max-height: 60vh;
+    }
 }
 
-.card {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-/* Weather Icon Styles */
-.weather-info h3 {
-    position: relative;
-    padding-left: 30px; /* Space for SVG icon */
-}
 
-/* SVG icon for mobile (shown by default) */
-.weather-info h3::before {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url('images/weather.svg');
-    background-size: contain;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-/* Emoticon for desktop (hidden by default) */
-.weather-info h3::after {
-    display: none;
-    content: "⛅";
-    margin-left: 0.5rem;
-}
 
-@media screen and (min-width: 768px) {
-    /* Hide SVG icon on desktop */
-    .weather-info h3::before {
-        display: none;
+
+
+
+
+
+/* ESTILOS PARA ESCRITORIO (cuadros sobre imagen) */
+@media screen and (min-width: 992px) {
+    .info {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
     }
     
-    /* Show emoticon on desktop */
-    .weather-info h3::after {
-        display: inline;
+    .card {
+        position: relative;
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 48%;
+        max-width: 400px;
     }
+    
+    /* País arriba a la izquierda */
+    .card:first-child {
+        align-self: flex-start;
+    }
+    
+    /* Clima abajo a la derecha */
+    .card:last-child {
+        align-self: flex-end;
+    }
+}
+
+/* ESTILOS PARA MÓVIL/TABLET (cuadros debajo de imagen) */
+@media screen and (max-width: 991px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+}
+
+/* Estilos del icono del clima */
+.weather-icon::after {
+    content: "⛅";
+    margin-left: 0.5rem;
 }
 
 .places {
@@ -138,6 +170,12 @@ nav a:hover {
     margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+    .place-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 figure {
     text-align: center;
 }
@@ -146,6 +184,8 @@ figure img {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    width: 100%;
+    height: auto;
 }
 
 figure img:hover {
@@ -158,26 +198,4 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-}
-
-/* Media Queries */
-@media screen and (min-width: 768px) {
-    .info {
-        grid-template-columns: 2fr 1fr;
-    }
-    
-    .place-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .weather-icon::after {
-        content: ""; /* Hide the emoticon in mobile */
-    }
-    
-    .weather-info::before {
-        content: url('images/.weather-icon');
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 0.5rem;
-    }
 }
