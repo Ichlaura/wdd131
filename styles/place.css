@@ -123,10 +123,7 @@ nav a:hover {
 }
 
 /* Estilos del icono del clima */
-.weather-icon::after {
-    content: "⛅";
-    margin-left: 0.5rem;
-}
+
 
 .places {
     padding: 2rem;
@@ -146,6 +143,44 @@ nav a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
+
+/* Estilos del icono del clima - Versión corregida */
+.weather-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('images/weather.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .weather-icon {
+        background-image: none;
+    }
+    
+    .weather-icon::after {
+        content: "⛅";
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 figure {
     text-align: center;
