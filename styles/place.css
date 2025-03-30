@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #bc002d;
-    --secondary-color: #ffffff;
-    --accent-color: #3b5998;
+    --primary-color: #bc002d; /* Japanese red */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #3b5998; /* Dark blue */
     --text-color: #333333;
     --background-color: #f5f5f5;
     --card-bg: #ffffff;
@@ -20,7 +20,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* HEADER STYLES */
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -48,24 +47,14 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* HERO SECTION - IMAGEN PRINCIPAL */
 .hero {
     position: relative;
     margin-bottom: 2rem;
-    width: 100%;
-}
-
-.hero picture {
-    display: block;
-    width: 100%;
-    line-height: 0; /* Elimina espacio fantasma debajo de la imagen */
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    max-height: 80vh;
-    object-fit: cover;
     display: block;
 }
 
@@ -80,46 +69,65 @@ nav a:hover {
     text-align: center;
 }
 
-/* INFO CARDS */
-.info {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* WEATHER ICON STYLES - SVG Y EMOJI */
-.weather-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url('images/weather.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-}
-
-@media screen and (min-width: 768px) {
-    .weather-icon {
-        background-image: none;
+/* ESTILOS PARA ESCRITORIO (cuadros sobre imagen) */
+@media screen and (min-width: 992px) {
+    .info {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
     }
     
-    .weather-icon::after {
-        content: "⛅";
-        margin-left: 0.5rem;
+    .card {
+        position: relative;
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 48%;
+        max-width: 400px;
+    }
+    
+    /* País arriba a la izquierda */
+    .card:first-child {
+        align-self: flex-start;
+    }
+    
+    /* Clima abajo a la derecha */
+    .card:last-child {
+        align-self: flex-end;
     }
 }
 
-/* PLACES SECTION */
+/* ESTILOS PARA MÓVIL/TABLET (cuadros debajo de imagen) */
+@media screen and (max-width: 991px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+}
+
+/* Estilos del icono del clima */
+.weather-icon::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+}
+
 .places {
     padding: 2rem;
     max-width: 1200px;
@@ -131,6 +139,12 @@ nav a:hover {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .place-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 figure {
@@ -149,7 +163,6 @@ figure img:hover {
     transform: scale(1.03);
 }
 
-/* FOOTER */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -158,23 +171,112 @@ footer {
     margin-top: 2rem;
 }
 
-/* MEDIA QUERIES */
+
+
+
+
+
+
+
+
+/* ESTILOS PARA ESCRITORIO (cuadros sobre imagen) */
+@media screen and (min-width: 992px) {
+    .info {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    .card {
+        position: relative;
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 48%;
+        max-width: 400px;
+    }
+    
+    /* País arriba a la izquierda */
+    .card:first-child {
+        align-self: flex-start;
+    }
+    
+    /* Clima abajo a la derecha */
+    .card:last-child {
+        align-self: flex-end;
+    }
+}
+
+/* ESTILOS PARA MÓVIL/TABLET (cuadros debajo de imagen) */
+@media screen and (max-width: 991px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+}
+
+/* Estilos del icono del clima */
+.weather-icon::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+}
+
+.places {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.place-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
 @media screen and (min-width: 768px) {
     .place-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    .info {
-        grid-template-columns: 2fr 1fr;
-    }
 }
 
-@media screen and (max-width: 600px) {
-    .hero img {
-        max-height: 60vh;
-    }
-    
-    .hero-text h2 {
-        font-size: 1.5rem;
-    }
+figure {
+    text-align: center;
+}
+
+figure img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 100%;
+    height: auto;
+}
+
+figure img:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
