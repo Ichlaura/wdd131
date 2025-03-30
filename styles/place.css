@@ -86,9 +86,43 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.weather-icon::after {
+/* Weather Icon Styles */
+.weather-info h3 {
+    position: relative;
+    padding-left: 30px; /* Space for SVG icon */
+}
+
+/* SVG icon for mobile (shown by default) */
+.weather-info h3::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('images/weather.svg');
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Emoticon for desktop (hidden by default) */
+.weather-info h3::after {
+    display: none;
     content: "⛅";
     margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    /* Hide SVG icon on desktop */
+    .weather-info h3::before {
+        display: none;
+    }
+    
+    /* Show emoticon on desktop */
+    .weather-info h3::after {
+        display: inline;
+    }
 }
 
 .places {
