@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #bc002d; /* Japanese red */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #3b5998; /* Dark blue */
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+    --card-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+}
+
+.places {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.place-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .info {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .place-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .weather-icon::after {
+        content: ""; /* Hide the emoticon in mobile */
+    }
+    
+    .weather-info::before {
+        content: url('images/.weather-icon');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+}
