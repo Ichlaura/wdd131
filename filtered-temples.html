@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Laura Paola Nunez Cala, Web Development, HTML, CSS, JavaScript">
+  <meta name="author" content="Laura Paola Nunez Cala">
+  <title>WDD 131 – Dynamic Web Fundamentals - Laura Nunez</title>
+  <!-- External CSS File -->
+  <link rel="stylesheet" href="styles/templescopy.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+  <!-- External JS File -->
+  <script defer src="scripts/templescopy.js"></script>
+</head>
+
+<body>
+     <!-- Header Section -->
+     <header>
+        <h1 class="handler">Temple Album</h1>
+      
+        <a href="#" id="hambutton"></a> <!-- Agregamos un ícono de menú -->
+        <nav id="navmenu">
+            <a href="#" onclick="filterHome()">Home</a>
+            <a href="#" onclick="filterOld()">Old</a>
+            <a href="#" onclick="filterNew()">New</a>
+            <a href="#" onclick="filterLarge()">Large</a>
+            <a href="#" onclick="filterSmall()">Small</a>
+          </nav>
+      </header>
+      
+
+  <main>
+    
+    <h2>Home</h2>
+    
+    <div class="res-grid" id="temples-container">
+  
+      </div>
+  </main>
+
+  <footer>
+  
+        <p><span id="currentYear"></span> Laura Paola Nunez Cala - Japan</p>
+        <p class="smaller" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+     
+  </footer>
+</body>
+
+</html>
