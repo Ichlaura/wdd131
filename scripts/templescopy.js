@@ -177,6 +177,26 @@ function displayTemples(templesArray) {
     displayTemples(oldTemples); // Mostrar solo templos antiguos
   }
 
+// FUNCIONES DE FILTRO ÚNICAS (elimina las duplicadas)
+function filterOld() {
+    document.querySelectorAll('#navmenu a').forEach(a => a.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    const oldTemples = temples.filter(temple => {
+      const year = parseInt(temple.dedicated.split(',')[0]);
+      return year < 1900;
+    });
+    displayTemples(oldTemples);
+    document.querySelector('h2').textContent = 'Old Temples (Before 1900)';
+  }
+
+  img.onerror = function() {
+    this.src = 'https://via.placeholder.com/400x250?text=Image+Not+Available';
+    this.alt = 'Imagen no disponible';
+  };
+
+
+
   // menu 
 
   // Función para filtrar templos antiguos (antes de 1900)
