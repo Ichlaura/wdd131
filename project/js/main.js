@@ -163,8 +163,10 @@ registrationForm?.addEventListener('submit', (e) => {
 
 function saveRegistration(data) {
     // Get existing registrations or create new array
-    const registrations = JSON.parse(localStorage.getItem('registrations') || [];
+   
     
+    const registrations = JSON.parse(localStorage.getItem('registrations') || '[]');
+
     // Add new registration
     registrations.push(data);
     
