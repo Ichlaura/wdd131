@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .btn {
+    background-color: #ff8c00;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.categoria img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.producto {
+    width: 30%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 2rem auto;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #ff8c00;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e07b00;
+}
