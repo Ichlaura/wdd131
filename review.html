@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+</head>
+<body>
+    <h1>Thank You for Your Review!</h1>
+    <p>Your review has been successfully submitted.</p>
+    <p>Total Reviews Submitted: <span id="review-count">0</span></p>
+
+    <script>
+        // Retrieve and display review count
+        const reviewCount = localStorage.getItem("reviewCount") || 0;
+        document.getElementById("review-count").textContent = reviewCount;
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Laura Paola Nunez Cala, Web Development, HTML, CSS, JavaScript">
+    <meta name="author" content="Laura Paola Nunez Cala">
+    <title>WDD 131 – Dynamic Web Fundamentals - Laura Nunez</title>
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+   
+</head>
+
+</head>
+
+<body>
+  <header>
+    <h1>Product Review</h1>
+    
+  </header>
+  <main>
+    <form action="review.html" method="get">
+
+      <div class="item">
+        <label for="product_name">Product Name</label>
+        <select id="product_name" name="product_name" required>
+          <option value="" selected disabled>Choose a Product ...</option>
+          <option value="product1">Product 1</option>
+          <option value="product2">Product 2</option>
+          <option value="product3">Product 3</option>
+        </select>
+      </div>
+
+      <div class="item">
+        <p>Overall Rating</p>
+        <div class="radio-group">
+          <label for="overall-1">&star;</label>
+          <label for="overall-2">&star;&star;</label>
+          <label for="overall-3">&star;&star;&star;</label>
+          <label for="overall-4">&star;&star;&star;&star;</label>
+          <label for="overall-5">&star;&star;&star;&star;&star;</label>
+          <input type="radio" id="overall-1" name="overall" required>
+          <input type="radio" id="overall-2" name="overall" required>
+          <input type="radio" id="overall-3" name="overall" required>
+          <input type="radio" id="overall-4" name="overall" required>
+          <input type="radio" id="overall-5" name="overall" required>
+        </div>
+      </div>
+
+      <div class="item">
+        <label>Date of Installation
+          <input type="date" id="install" name="install" required></label>
+      </div>
+
+      <div class="item">
+        <p>Which features did you find useful in the product?<br>
+          <em>(Check all that apply)</em>
+        </p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="durablility" name="durability" value="durability">
+          <label for="durablility">Durability</label>
+          <input type="checkbox" id="ease" name="ease" value="ease">
+          <label for="ease">Ease of Use</label>
+          <input type="checkbox" id="performance" name="performance" value="performance">
+          <label for="performance">Performance</label>
+          <input type="checkbox" id="design" name="design" value="design">
+          <label for="design">Design</label>
+        </div>
+      </div>
+
+      <div class="item">
+        <label for="review">Written Review <span class="smaller">(Optional)</span></label>
+        <textarea id="review" name="review"></textarea>
+      </div>
+
+      <div class="item">
+        <label for="user">Your Name <span class="smaller">(Optional)</span></label>
+        <input type="text" id="user" name="user">
+      </div>
+
+      <input type="submit" value="Post Review">
+
+    </form>
+  </main>
+    <footer>
+  
+        <p><span id="currentYear"></span> Laura Paola Nunez Cala - Japan</p>
+        <p class="smaller" id="lastModified">Last Modification: 08/04/2025 12:52:01</p>
+     
+  </footer>
+
+
+
+</body>
+</html>

@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("lastModified").textContent = `Last modified: ${lastModifiedDate}`;
   });
   
+
   // select the DOM elements for output
 const full = document.querySelector("#full");
 const worldfull = document.querySelector("#world-full");
