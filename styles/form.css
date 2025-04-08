@@ -24,13 +24,16 @@
   }
   
   header,
+
+  
   footer {
-    color: white;
+    color: #D1D5DB;  /* Gris claro para el texto en lugar de blanco */
     background-color: var(--back1);
     text-align: center;
     padding: 1rem;
   }
   
+
   h1 {
     font-size: 1.5rem;
   }
@@ -53,11 +56,15 @@
     margin-bottom: 1rem;
   }
   
+
   label,
   .item p {
     font-size: .85rem;
     font-weight: 700;
+    color: #333; /* Gris oscuro para mayor contraste */
   }
+  
+
   
   input[type="text"],
   input[type="checkbox"],
@@ -71,10 +78,15 @@
     width: 100%;
   }
   
-  input:focus {
-    outline: 1px solid #999;
-  }
+ 
   
+  input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #1D4ED8;  /* Un borde azul más fuerte al enfocarse */
+  background-color: #F9FAFB;  /* Fondo claro más suave */
+}
+
   input[type="checkbox"],
   [type="radio"] {
     width: 25px;
@@ -109,11 +121,11 @@
  
   .radio-group label {
     font-size: 1rem;
-    color: #FFD700;  /* Color dorado para las estrellas */
+    color: #DAA520;  /* Dorado más oscuro para mayor contraste */
     cursor: pointer;
     transition: color 0.3s ease;
   }
-
+  
   .checkbox-group {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -125,10 +137,13 @@
     margin-left: .5rem;
   }
   
+ 
   .smaller {
     font-size: .7rem;
-    color: rgb(255, 255, 255);
+    color: #D1D5DB; /* Gris claro, mejora contraste */
   }
+  
+  
   
   @media (min-width: 600px) {
     h1 {
