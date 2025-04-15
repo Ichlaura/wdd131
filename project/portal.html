@@ -10,7 +10,31 @@
 </head>
 <body>
     <header>
-        <!-- Same header as index.html -->
+        <div class="container">
+            <div class="logo">
+                <h1>Paola's <span>English School</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="courses.html" data-lang="courses">Courses</a></li>
+                    <li><a href="teachers.html" data-lang="teachers">Our Teachers</a></li>
+                    <li><a href="pricing.html" data-lang="pricing">Pricing</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact</a></li>
+                    <li><a href="portal.html" class="btn" data-lang="portal">Student Portal</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
     <section class="portal-login">
@@ -58,8 +82,33 @@
     </section>
 
     <footer>
-        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-section">
+                <h3 data-lang="footer_about">About Us</h3>
+                <p data-lang="footer_about_text">Paola's English School has been helping students achieve fluency since 2010 with innovative teaching methods.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="footer_links">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="courses.html" data-lang="courses">Courses</a></li>
+                    <li><a href="teachers.html" data-lang="teachers">Our Teachers</a></li>
+                    <li><a href="pricing.html" data-lang="pricing">Pricing</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="footer_contact">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-lang="footer_address">123 Education St, Learning City</span></p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@paolasenglish.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Paola's English School. <span data-lang="footer_rights">All rights reserved.</span></p>
+        </div>
     </footer>
+
 
     <script src="js/main.js"></script>
     <script src="js/language-switcher.js"></script>
