@@ -1,0 +1,76 @@
+{
+    "teachers": [
+        {
+            "id": 1,
+            "name": "Paola Rodriguez",
+            "specialty": ["business", "conversation"],
+            "bio": {
+                "en": "Founder and lead teacher with 15 years of experience in teaching English to adults and professionals.",
+                "es": "Fundadora y profesora principal con 15 años de experiencia enseñando inglés a adultos y profesionales.",
+                "ja": "創設者兼主任講師。大人や専門家に英語を教える15年の経験があります。"
+            },
+            "image": "teacher1.jpg",
+            "certifications": ["DELTA", "MA in Applied Linguistics"]
+        },
+        {
+            "id": 2,
+            "name": "James Wilson",
+            "specialty": ["exam", "business"],
+            "bio": {
+                "en": "Specialized in IELTS and TOEFL preparation with a 98% student success rate.",
+                "es": "Especializado en preparación para IELTS y TOEFL con un 98% de éxito estudiantil.",
+                "ja": "IELTSとTOEFLの準備に特化しており、学生の成功率は98％です。"
+            },
+            "image": "teacher2.jpg",
+            "certifications": ["CELTA", "TEFL"]
+        },
+        {
+            "id": 3,
+            "name": "Yuki Tanaka",
+            "specialty": ["kids", "conversation"],
+            "bio": {
+                "en": "Passionate about teaching children and beginners with fun, interactive methods.",
+                "es": "Apasionada por enseñar a niños y principiantes con métodos divertidos e interactivos.",
+                "ja": "楽しくインタラクティブな方法で子供や初心者に教えることに情熱を持っています。"
+            },
+            "image": "teacher3.jpg",
+            "certifications": ["TEFL", "Early Childhood Education"]
+        },
+        {
+            "id": 4,
+            "name": "Carlos Mendez",
+            "specialty": ["business", "exam"],
+            "bio": {
+                "en": "Corporate English trainer with experience in multinational companies.",
+                "es": "Entrenador de inglés corporativo con experiencia en empresas multinacionales.",
+                "ja": "多国籍企業での経験を持つ企業向け英語トレーナー。"
+            },
+            "image": "teacher4.jpg",
+            "certifications": ["CELTA", "Business English Certificate"]
+        },
+        {
+            "id": 5,
+            "name": "Emma Johnson",
+            "specialty": ["conversation", "kids"],
+            "bio": {
+                "en": "Specializes in conversational English and accent reduction.",
+                "es": "Especializada en inglés conversacional y reducción de acento.",
+                "ja": "会話英語とアクセント軽減を専門としています。"
+            },
+            "image": "teacher5.jpg",
+            "certifications": ["TEFL", "Pronunciation Specialist"]
+        },
+        {
+            "id": 6,
+            "name": "David Kim",
+            "specialty": ["exam", "business"],
+            "bio": {
+                "en": "Cambridge exam specialist with 10 years of teaching experience.",
+                "es": "Especialista en exámenes de Cambridge con 10 años de experiencia docente.",
+                "ja": "10年の教育経験を持つケンブリッジ試験の専門家。"
+            },
+            "image": "teacher6.jpg",
+            "certifications": ["DELTA", "FCE/CAE/CPE Examiner"]
+        }
+    ]
+}

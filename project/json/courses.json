@@ -1,0 +1,106 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": {
+                "en": "General English",
+                "es": "Inglés General",
+                "ja": "一般英語"
+            },
+            "level": "beginner",
+            "type": "general",
+            "description": {
+                "en": "Comprehensive course covering all aspects of English for everyday use.",
+                "es": "Curso completo que cubre todos los aspectos del inglés para uso cotidiano.",
+                "ja": "日常使用のための英語のすべての側面をカバーする包括的なコース。"
+            },
+            "duration": "12 weeks",
+            "hours": "60 hours"
+        },
+        {
+            "id": 2,
+            "title": {
+                "en": "Business English",
+                "es": "Inglés de Negocios",
+                "ja": "ビジネス英語"
+            },
+            "level": "intermediate",
+            "type": "business",
+            "description": {
+                "en": "Develop professional communication skills for the workplace.",
+                "es": "Desarrolla habilidades de comunicación profesional para el lugar de trabajo.",
+                "ja": "職場での専門的なコミュニケーションスキルを開発します。"
+            },
+            "duration": "8 weeks",
+            "hours": "40 hours"
+        },
+        {
+            "id": 3,
+            "title": {
+                "en": "IELTS Preparation",
+                "es": "Preparación para IELTS",
+                "ja": "IELTS準備コース"
+            },
+            "level": "intermediate",
+            "type": "exam",
+            "description": {
+                "en": "Strategies and practice to achieve your best possible IELTS score.",
+                "es": "Estrategias y práctica para obtener tu mejor puntaje posible en IELTS.",
+                "ja": "可能な限り最高のIELTSスコアを達成するための戦略と練習。"
+            },
+            "duration": "10 weeks",
+            "hours": "50 hours"
+        },
+        {
+            "id": 4,
+            "title": {
+                "en": "Conversation Club",
+                "es": "Club de Conversación",
+                "ja": "会話クラブ"
+            },
+            "level": "all",
+            "type": "conversation",
+            "description": {
+                "en": "Practice speaking English in a relaxed, social environment.",
+                "es": "Practica hablar inglés en un ambiente social relajado.",
+                "ja": "リラックスした社交的な環境で英語を話す練習をします。"
+            },
+            "duration": "Ongoing",
+            "hours": "2 hours/week"
+        },
+        {
+            "id": 5,
+            "title": {
+                "en": "English for Kids",
+                "es": "Inglés para Niños",
+                "ja": "子供向け英語"
+            },
+            "level": "beginner",
+            "type": "kids",
+            "description": {
+                "en": "Fun, interactive classes designed specifically for young learners.",
+                "es": "Clases divertidas e interactivas diseñadas específicamente para jóvenes estudiantes.",
+                "ja": "若い学習者向けに特別に設計された楽しくインタラクティブなクラス。"
+            },
+            "duration": "16 weeks",
+            "hours": "32 hours"
+        },
+        {
+            "id": 6,
+            "title": {
+                "en": "Advanced Writing",
+                "es": "Escritura Avanzada",
+                "ja": "高度なライティング"
+            },
+            "level": "advanced",
+            "type": "special",
+            "description": {
+                "en": "Master academic and professional writing skills.",
+                "es": "Domina las habilidades de escritura académica y profesional.",
+                "ja": "学術的および専門的なライティングスキルをマスターします。"
+            },
+            "duration": "6 weeks",
+            "hours": "24 hours"
+        }
+    ]
+}

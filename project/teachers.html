@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="teachers_title">Paola's English School | Our Teachers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="teachers-hero">
+        <div class="container">
+            <h1 data-lang="teachers_hero_title">Meet Our Expert Teachers</h1>
+            <p data-lang="teachers_hero_text">Our team of certified English teachers brings years of experience and passion to every class.</p>
+        </div>
+    </section>
+
+    <section class="teachers-filter">
+        <div class="container">
+            <div class="filter-options">
+                <label for="specialty-filter" data-lang="teachers_filter_specialty">Filter by Specialty:</label>
+                <select id="specialty-filter">
+                    <option value="all" data-lang="teachers_filter_all">All Specialties</option>
+                    <option value="business" data-lang="teachers_filter_business">Business English</option>
+                    <option value="exam" data-lang="teachers_filter_exam">Exam Preparation</option>
+                    <option value="conversation" data-lang="teachers_filter_conversation">Conversation</option>
+                    <option value="kids" data-lang="teachers_filter_kids">Kids & Teens</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="teachers-list">
+        <div class="container" id="teachers-container">
+            <!-- Teachers will be loaded from JSON via JS -->
+        </div>
+    </section>
+
+    <section class="teacher-cta">
+        <div class="container">
+            <h2 data-lang="teachers_cta_title">Ready to Start Learning?</h2>
+            <p data-lang="teachers_cta_text">Book a free trial class with one of our teachers today!</p>
+            <a href="contact.html" class="btn btn-primary" data-lang="teachers_cta_button">Book a Trial Class</a>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/teachers.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-plans .price-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .courses-list .course-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .teachers-list .teacher-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .features .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .level-guide .level-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-plans .price-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .courses-list .course-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .teachers-list .teacher-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .level-guide .level-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .portal-login .container {
+        flex-direction: column;
+    }
+    
+    .login-box, .portal-info {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .cta-buttons .btn {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}

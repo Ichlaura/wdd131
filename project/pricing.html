@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="pricing_title">Paola's English School | Pricing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="pricing-hero">
+        <div class="container">
+            <h1 data-lang="pricing_hero_title">Our Pricing Plans</h1>
+            <p data-lang="pricing_hero_text">Choose the plan that fits your learning goals and budget. All prices are in local currency.</p>
+            <div class="currency-switcher">
+                <label for="currency-selector" data-lang="pricing_currency">Select Currency:</label>
+                <select id="currency-selector">
+                    <option value="cop">Colombia (COP)</option>
+                    <option value="usd">United States (USD)</option>
+                    <option value="eur">Europe (EUR)</option>
+                    <option value="jpy">Japan (JPY)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="pricing-tabs">
+                <button class="tab-btn active" data-tab="individual" data-lang="pricing_tab_individual">Individual Classes</button>
+                <button class="tab-btn" data-tab="group" data-lang="pricing_tab_group">Group Classes</button>
+                <button class="tab-btn" data-tab="intensive" data-lang="pricing_tab_intensive">Intensive Courses</button>
+            </div>
+
+            <div class="pricing-content">
+                <div class="tab-content active" id="individual">
+                    <div class="price-cards">
+                        <!-- Individual pricing cards will be loaded via JS -->
+                    </div>
+                </div>
+                <div class="tab-content" id="group">
+                    <div class="price-cards">
+                        <!-- Group pricing cards will be loaded via JS -->
+                    </div>
+                </div>
+                <div class="tab-content" id="intensive">
+                    <div class="price-cards">
+                        <!-- Intensive pricing cards will be loaded via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-faq">
+        <div class="container">
+            <h2 data-lang="pricing_faq_title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-lang="pricing_faq1_q">What payment methods do you accept?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-lang="pricing_faq1_a">We accept credit/debit cards (Visa, MasterCard, American Express), bank transfers, PayPal, and in some locations, cash payments.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-lang="pricing_faq2_q">Are there any discounts available?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-lang="pricing_faq2_a">Yes! We offer 10% discount for students who pay for 3 months in advance, and 15% discount for 6-month packages. We also have family discounts and referral bonuses.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3 data-lang="pricing_faq3_q">Can I get a refund if I'm not satisfied?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p data-lang="pricing_faq3_a">We offer a full refund if you cancel within the first week of classes. After that, refunds are prorated based on classes taken.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-cta">
+        <div class="container">
+            <h2 data-lang="pricing_cta_title">Not sure which plan is right for you?</h2>
+            <p data-lang="pricing_cta_text">Contact us for a free consultation and we'll help you choose the best option for your needs.</p>
+            <a href="contact.html" class="btn btn-primary" data-lang="pricing_cta_button">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+</html>

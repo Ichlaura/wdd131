@@ -1,0 +1,95 @@
+{
+    "pricing": {
+        "individual": [
+            {
+                "title": {
+                    "en": "Starter Package",
+                    "es": "Paquete Inicial",
+                    "ja": "スターターパッケージ"
+                },
+                "description": {
+                    "en": "Perfect for trying out private lessons",
+                    "es": "Perfecto para probar clases privadas",
+                    "ja": "プライベートレッスンを試すのに最適"
+                },
+                "cop": "600,000",
+                "usd": "150",
+                "eur": "130",
+                "jpy": "16,500",
+                "features": [
+                    {"en": "4 private lessons", "es": "4 clases privadas", "ja": "プライベートレッスン4回"},
+                    {"en": "1 month access", "es": "1 mes de acceso", "ja": "1ヶ月アクセス"},
+                    {"en": "Basic materials", "es": "Materiales básicos", "ja": "基本教材"}
+                ]
+            },
+            {
+                "title": {
+                    "en": "Standard Package",
+                    "es": "Paquete Estándar",
+                    "ja": "スタンダードパッケージ"
+                },
+                "description": {
+                    "en": "Our most popular option",
+                    "es": "Nuestra opción más popular",
+                    "ja": "最も人気のあるオプション"
+                },
+                "cop": "1,500,000",
+                "usd": "375",
+                "eur": "325",
+                "jpy": "41,250",
+                "features": [
+                    {"en": "12 private lessons", "es": "12 clases privadas", "ja": "プライベートレッスン12回"},
+                    {"en": "3 months access", "es": "3 meses de acceso", "ja": "3ヶ月アクセス"},
+                    {"en": "Premium materials", "es": "Materiales premium", "ja": "プレミアム教材"},
+                    {"en": "Progress report", "es": "Informe de progreso", "ja": "進捗レポート"}
+                ]
+            }
+        ],
+        "group": [
+            {
+                "title": {
+                    "en": "Basic Group",
+                    "es": "Grupo Básico",
+                    "ja": "基本グループ"
+                },
+                "description": {
+                    "en": "Small group classes",
+                    "es": "Clases en grupos pequeños",
+                    "ja": "少人数グループクラス"
+                },
+                "cop": "300,000",
+                "usd": "75",
+                "eur": "65",
+                "jpy": "8,250",
+                "features": [
+                    {"en": "8 group lessons", "es": "8 clases grupales", "ja": "グループレッスン8回"},
+                    {"en": "1 month access", "es": "1 mes de acceso", "ja": "1ヶ月アクセス"},
+                    {"en": "Basic materials", "es": "Materiales básicos", "ja": "基本教材"}
+                ]
+            }
+        ],
+        "intensive": [
+            {
+                "title": {
+                    "en": "Summer Intensive",
+                    "es": "Intensivo de Verano",
+                    "ja": "夏期集中コース"
+                },
+                "description": {
+                    "en": "Fast-track your learning",
+                    "es": "Acelera tu aprendizaje",
+                    "ja": "学習を加速させましょう"
+                },
+                "cop": "2,400,000",
+                "usd": "600",
+                "eur": "520",
+                "jpy": "66,000",
+                "features": [
+                    {"en": "40 lessons in 4 weeks", "es": "40 clases en 4 semanas", "ja": "4週間で40レッスン"},
+                    {"en": "Daily practice", "es": "Práctica diaria", "ja": "毎日の練習"},
+                    {"en": "All materials included", "es": "Todos los materiales incluidos", "ja": "すべての教材を含む"}
+                ]
+            }
+        ]
+    }
+}

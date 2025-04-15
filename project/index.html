@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title">Paola's English School | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Paola's <span>English School</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="courses.html" data-lang="courses">Courses</a></li>
+                    <li><a href="teachers.html" data-lang="teachers">Our Teachers</a></li>
+                    <li><a href="pricing.html" data-lang="pricing">Pricing</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact</a></li>
+                    <li><a href="portal.html" class="btn" data-lang="portal">Student Portal</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-lang="hero_title">Learn English with the Best Teachers</h1>
+            <p data-lang="hero_text">Join our international community of students and achieve fluency with our proven methodology.</p>
+            <a href="courses.html" class="btn btn-primary" data-lang="hero_button">Discover Our Courses</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <i class="fas fa-globe"></i>
+                <h3 data-lang="feature1_title">Global Community</h3>
+                <p data-lang="feature1_text">Students from over 30 countries learning together.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3 data-lang="feature2_title">Certified Teachers</h3>
+                <p data-lang="feature2_text">All our instructors are CELTA or DELTA certified.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-laptop"></i>
+                <h3 data-lang="feature3_title">Flexible Learning</h3>
+                <p data-lang="feature3_text">Online or in-person classes to fit your schedule.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 data-lang="testimonials_title">What Our Students Say</h2>
+            <div class="testimonial-slider">
+                <!-- Testimonials will be loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3 data-lang="footer_about">About Us</h3>
+                <p data-lang="footer_about_text">Paola's English School has been helping students achieve fluency since 2010 with innovative teaching methods.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="footer_links">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" data-lang="home">Home</a></li>
+                    <li><a href="courses.html" data-lang="courses">Courses</a></li>
+                    <li><a href="teachers.html" data-lang="teachers">Our Teachers</a></li>
+                    <li><a href="pricing.html" data-lang="pricing">Pricing</a></li>
+                    <li><a href="contact.html" data-lang="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang="footer_contact">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-lang="footer_address">123 Education St, Learning City</span></p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@paolasenglish.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Paola's English School. <span data-lang="footer_rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
+</body>
+</html>

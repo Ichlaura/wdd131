@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="courses_title">Paola's English School | Our Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="courses-hero">
+        <div class="container">
+            <h1 data-lang="courses_hero_title">Our English Courses</h1>
+            <p data-lang="courses_hero_text">We offer a wide range of courses tailored to different levels and needs. Find the perfect one for you!</p>
+        </div>
+    </section>
+
+    <section class="courses-filter">
+        <div class="container">
+            <div class="filter-options">
+                <label for="level-filter" data-lang="courses_filter_level">Filter by Level:</label>
+                <select id="level-filter">
+                    <option value="all" data-lang="courses_filter_all">All Levels</option>
+                    <option value="beginner" data-lang="courses_filter_beginner">Beginner (A1-A2)</option>
+                    <option value="intermediate" data-lang="courses_filter_intermediate">Intermediate (B1-B2)</option>
+                    <option value="advanced" data-lang="courses_filter_advanced">Advanced (C1-C2)</option>
+                </select>
+                <label for="type-filter" data-lang="courses_filter_type">Filter by Type:</label>
+                <select id="type-filter">
+                    <option value="all" data-lang="courses_filter_all">All Types</option>
+                    <option value="general" data-lang="courses_filter_general">General English</option>
+                    <option value="business" data-lang="courses_filter_business">Business English</option>
+                    <option value="exam" data-lang="courses_filter_exam">Exam Preparation</option>
+                    <option value="conversation" data-lang="courses_filter_conversation">Conversation</option>
+                    <option value="special" data-lang="courses_filter_special">Specialized Courses</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-list">
+        <div class="container" id="courses-container">
+            <!-- Courses will be loaded from JSON via JS -->
+        </div>
+    </section>
+
+    <section class="level-guide">
+        <div class="container">
+            <h2 data-lang="courses_level_title">English Level Guide</h2>
+            <div class="level-cards">
+                <div class="level-card">
+                    <h3 data-lang="courses_level_a1">Beginner (A1)</h3>
+                    <p data-lang="courses_level_a1_text">Can understand and use familiar everyday expressions and very basic phrases.</p>
+                </div>
+                <div class="level-card">
+                    <h3 data-lang="courses_level_a2">Elementary (A2)</h3>
+                    <p data-lang="courses_level_a2_text">Can communicate in simple and routine tasks requiring a simple exchange of information.</p>
+                </div>
+                <div class="level-card">
+                    <h3 data-lang="courses_level_b1">Intermediate (B1)</h3>
+                    <p data-lang="courses_level_b1_text">Can deal with most situations likely to arise while traveling in an English-speaking area.</p>
+                </div>
+                <div class="level-card">
+                    <h3 data-lang="courses_level_b2">Upper Intermediate (B2)</h3>
+                    <p data-lang="courses_level_b2_text">Can interact with a degree of fluency and spontaneity that makes regular interaction possible.</p>
+                </div>
+                <div class="level-card">
+                    <h3 data-lang="courses_level_c1">Advanced (C1)</h3>
+                    <p data-lang="courses_level_c1_text">Can express ideas fluently and spontaneously without much obvious searching for expressions.</p>
+                </div>
+                <div class="level-card">
+                    <h3 data-lang="courses_level_c2">Proficiency (C2)</h3>
+                    <p data-lang="courses_level_c2_text">Can understand with ease virtually everything heard or read.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-cta">
+        <div class="container">
+            <h2 data-lang="courses_cta_title">Not sure which course is right for you?</h2>
+            <p data-lang="courses_cta_text">Take our free online placement test or schedule a consultation with one of our advisors.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-secondary" data-lang="courses_cta_test">Take Placement Test</a>
+                <a href="contact.html" class="btn btn-primary" data-lang="courses_cta_contact">Contact an Advisor</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>
