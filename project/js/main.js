@@ -107,3 +107,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+// Load testimonials dynamically
+const testimonials = [
+    {
+        name: "Laura",
+        comment: "This school has helped me improve my English so much!",
+        image: "images/student1.jpg"
+    },
+    {
+        name: "Sohei",
+        comment: "I love the classes. The teachers are very friendly.",
+        image: "images/student2.jpg"
+    },
+    {
+        name: "Ruby",
+        comment: "Now I can speak English more confidently. Thank you!",
+        image: "images/student3.jpg"
+    }
+];
+
+const testimonialContainer = document.querySelector('.testimonial-slider');
+if (testimonialContainer) {
+    testimonials.forEach(t => {
+        const testimonial = document.createElement('div');
+        testimonial.classList.add('testimonial');
+        testimonial.innerHTML = `
+            <img src="${t.image}" alt="${t.name}" class="testimonial-img">
+            <p class="testimonial-comment">"${t.comment}"</p>
+            <h4 class="testimonial-name">- ${t.name}</h4>
+        `;
+        testimonialContainer.appendChild(testimonial);
+    });
+}
