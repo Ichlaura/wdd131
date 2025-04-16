@@ -37,48 +37,136 @@
         </div>
     </header>
 
+
+
+
+    <section class="pricing-plans">
     <section class="pricing-hero">
         <div class="container">
             <h1 data-lang="pricing_hero_title">Our Pricing Plans</h1>
             <p data-lang="pricing_hero_text">Choose the plan that fits your learning goals and budget. All prices are in local currency.</p>
             <div class="currency-switcher">
                 <label for="currency-selector" data-lang="pricing_currency">Select Currency:</label>
-                <select id="currency-selector">
-                    <option value="cop">Colombia (COP)</option>
-                    <option value="usd">United States (USD)</option>
-                    <option value="eur">Europe (EUR)</option>
-                    <option value="jpy">Japan (JPY)</option>
-                </select>
+                <select id="currency" onchange="renderCards()">
+                    <option value="cop">COP</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="jpy">JPY</option>
+                  </select>
             </div>
         </div>
     </section>
 
-    <section class="pricing-plans">
-        <div class="container">
-            <div class="pricing-tabs">
-                <button class="tab-btn active" data-tab="individual" data-lang="pricing_tab_individual">Individual Classes</button>
-                <button class="tab-btn" data-tab="group" data-lang="pricing_tab_group">Group Classes</button>
-                <button class="tab-btn" data-tab="intensive" data-lang="pricing_tab_intensive">Intensive Courses</button>
-            </div>
+  
 
-            <div class="pricing-content">
-                <div class="tab-content active" id="individual">
-                    <div class="price-cards">
-                        <!-- Individual pricing cards will be loaded via JS -->
-                    </div>
-                </div>
-                <div class="tab-content" id="group">
-                    <div class="price-cards">
-                        <!-- Group pricing cards will be loaded via JS -->
-                    </div>
-                </div>
-                <div class="tab-content" id="intensive">
-                    <div class="price-cards">
-                        <!-- Intensive pricing cards will be loaded via JS -->
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
+        <div style="text-align:center; margin-bottom: 1rem;">
+            <label for="language">🌐 Idioma: </label>
+            <select id="language" onchange="renderCards()">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+            </select>
+          
+            <label for="currency" style="margin-left: 1rem;">💰 Moneda: </label>
+            <select id="currency" onchange="renderCards()">
+              <option value="cop">COP</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="jpy">JPY</option>
+            </select>
+          </div>
+          
+          <div id="pricing-cards-container" style="max-width: 1200px; margin: auto; padding: 0 1rem;">
+            <div id="pricing-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;"></div>
+          </div>
+          
+          <script>
+          const pricingData = {
+            "individual": [
+              {
+                "title": { "en": "Starter Package", "es": "Paquete Inicial", "ja": "スターターパッケージ" },
+                "description": { "en": "Perfect for trying out private lessons", "es": "Perfecto para probar clases privadas", "ja": "プライベートレッスンを試すのに最適" },
+                "cop": "600,000", "usd": "150", "eur": "130", "jpy": "16,500",
+                "features": [
+                  { "en": "4 private lessons", "es": "4 clases privadas", "ja": "プライベートレッスン4回" },
+                  { "en": "1 month access", "es": "1 mes de acceso", "ja": "1ヶ月アクセス" },
+                  { "en": "Basic materials", "es": "Materiales básicos", "ja": "基本教材" }
+                ]
+              },
+              {
+                "title": { "en": "Standard Package", "es": "Paquete Estándar", "ja": "スタンダードパッケージ" },
+                "description": { "en": "Our most popular option", "es": "Nuestra opción más popular", "ja": "最も人気のあるオプション" },
+                "cop": "1,500,000", "usd": "375", "eur": "325", "jpy": "41,250",
+                "features": [
+                  { "en": "12 private lessons", "es": "12 clases privadas", "ja": "プライベートレッスン12回" },
+                  { "en": "3 months access", "es": "3 meses de acceso", "ja": "3ヶ月アクセス" },
+                  { "en": "Premium materials", "es": "Materiales premium", "ja": "プレミアム教材" },
+                  { "en": "Progress report", "es": "Informe de progreso", "ja": "進捗レポート" }
+                ]
+              }
+            ],
+            "group": [
+              {
+                "title": { "en": "Basic Group", "es": "Grupo Básico", "ja": "基本グループ" },
+                "description": { "en": "Small group classes", "es": "Clases en grupos pequeños", "ja": "少人数グループクラス" },
+                "cop": "300,000", "usd": "75", "eur": "65", "jpy": "8,250",
+                "features": [
+                  { "en": "8 group lessons", "es": "8 clases grupales", "ja": "グループレッスン8回" },
+                  { "en": "1 month access", "es": "1 mes de acceso", "ja": "1ヶ月アクセス" },
+                  { "en": "Basic materials", "es": "Materiales básicos", "ja": "基本教材" }
+                ]
+              }
+            ],
+            "intensive": [
+              {
+                "title": { "en": "Summer Intensive", "es": "Intensivo de Verano", "ja": "夏期集中コース" },
+                "description": { "en": "Fast-track your learning", "es": "Acelera tu aprendizaje", "ja": "学習を加速させましょう" },
+                "cop": "2,400,000", "usd": "600", "eur": "520", "jpy": "66,000",
+                "features": [
+                  { "en": "40 lessons in 4 weeks", "es": "40 clases en 4 semanas", "ja": "4週間で40レッスン" },
+                  { "en": "Daily practice", "es": "Práctica diaria", "ja": "毎日の練習" },
+                  { "en": "All materials included", "es": "Todos los materiales incluidos", "ja": "すべての教材を含む" }
+                ]
+              }
+            ]
+          };
+          
+          function renderCards() {
+            const lang = document.getElementById('language').value;
+            const currency = document.getElementById('currency').value;
+            const container = document.getElementById('pricing-cards');
+            container.innerHTML = '';
+          
+            Object.entries(pricingData).forEach(([category, packages]) => {
+              packages.forEach(pkg => {
+                const card = document.createElement('div');
+                card.style.border = '1px solid #ddd';
+                card.style.borderRadius = '10px';
+                card.style.padding = '0.8rem';
+                card.style.boxShadow = '0 2px 6px rgba(0,0,0,0.08)';
+                card.style.backgroundColor = '#fff';
+                card.style.fontSize = '0.9rem';
+          
+                const title = `<h3 style="margin-bottom: 0.3rem;">${pkg.title[lang]}</h3>`;
+                const desc = `<p style="margin: 0.2rem 0;">${pkg.description[lang]}</p>`;
+                const price = `<h4 style="color:#2c3e50; margin: 0.4rem 0;">${currency.toUpperCase()}: ${pkg[currency]}</h4>`;
+                const features = `<ul style="text-align:left; padding-left: 1.2rem; margin: 0.5rem 0;">${pkg.features.map(f => `<li>${f[lang]}</li>`).join('')}</ul>`;
+          
+                card.innerHTML = title + desc + price + features;
+                container.appendChild(card);
+              });
+            });
+          }
+          
+          renderCards();
+          </script>
+          
+
+
+          
     </section>
 
     <section class="pricing-faq">
@@ -155,5 +243,43 @@
     <script src="js/main.js"></script>
     <script src="js/language-switcher.js"></script>
     <script src="js/pricing.js"></script>
+
+    <script>
+        fetch('json/pricing.json')
+          .then(response => response.json())
+          .then(data => {
+            displayPricing(data.pricing.individual, document.querySelector('#individual .price-cards'));
+            displayPricing(data.pricing.group, document.querySelector('#group .price-cards'));
+            displayPricing(data.pricing.intensive, document.querySelector('#intensive .price-cards'));
+          })
+          .catch(error => {
+            console.error('Error loading pricing:', error);
+            document.querySelector('#individual .price-cards').innerHTML = "<p>Error loading pricing. Please try again later.</p>";
+            document.querySelector('#group .price-cards').innerHTML = "<p>Error loading pricing. Please try again later.</p>";
+            document.querySelector('#intensive .price-cards').innerHTML = "<p>Error loading pricing. Please try again later.</p>";
+          });
+    
+        function displayPricing(plans, container) {
+            container.innerHTML = ''; // limpiar contenido anterior
+            plans.forEach(plan => {
+                const card = document.createElement('div');
+                card.classList.add('price-card');
+                card.innerHTML = `
+                    <h3>${plan.title}</h3>
+                    <p>${plan.description}</p>
+                    <span class="price">${plan.price}</span>
+                `;
+                container.appendChild(card);
+            });
+        }
+    </script>
+    
+
+
+
+
+
+
+    
 </body>
 </html>
